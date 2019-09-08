@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from './_services/auth.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
 
@@ -18,4 +18,5 @@ export class AppComponent implements OnInit {
       this.authService.decodedToken  = this.JwtHelper.decodeToken(token);
     }
   }
+
 }
