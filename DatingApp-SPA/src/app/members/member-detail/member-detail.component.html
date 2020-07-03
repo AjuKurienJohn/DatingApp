@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <div class="row">
-    <h1>{{ user.knowAs }}'s Profile</h1>
+    <h1>{{ user.knownAs }}'s Profile</h1>
   </div>
   <div class="row">
     <div class="col col-sm4">
@@ -8,7 +8,7 @@
         <img
           class="card-img-top img-thumbnail"
           src="{{ user.photoUrl }}"
-          alt="{{ user.knowAs }}"
+          alt="{{ user.knownAs }}"
         />
         <div class="card-body">
           <div>
@@ -39,7 +39,7 @@
     <div class="col col-sm8">
       <div class="tab-panel">
         <tabset class="member-tabset">
-          <tab heading="About {{ user.knowAs }}">
+          <tab heading="About {{ user.knownAs }}">
             <h4>Description</h4>
             <p>{{ user.introduction }}</p>
             <h4>Looking For</h4>
